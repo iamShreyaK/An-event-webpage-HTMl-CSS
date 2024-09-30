@@ -1,0 +1,115 @@
+/* Body */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling background image and dimensions */
+section{
+    width: 100%;
+    height: 100vh;
+    background: url('./images/blackbg.jpg');
+    background-size: cover;
+}
+
+/* styling leftBox */
+section .leftBox{
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+section .leftBox .content{
+    color: #fff;
+    background: rgba(131, 130, 130, 0.4);
+    padding: 40px;
+    transition: .3s;
+}
+
+section .leftBox .content:hover{
+    background: rgb(94, 93, 93);
+}
+
+/* styling heder left sectin */
+section .leftBox .content h1{
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+section .leftBox .content p{
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+/* Styling all events */
+
+section .events{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    float: right;
+    box-sizing: border-box;
+}
+/* Styling links of event section */
+section .events ul{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 40px;
+    box-sizing: border-box;
+}
+/* styling ul */
+section .events ul li{
+    list-style: none;
+    background: #fff;
+    height: 200px;
+    margin: 15px 0;
+}
+section .events ul li .time{
+    position: relative;
+    padding: 20px;
+    background: #262626;
+    box-sizing: border-box;
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    transition: .5s;
+}
+section .events ul li .time:hover{
+    background: rgb(248, 219, 219);
+}
+/* styling header of time events section */
+section .events ul li .time h2{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color:rgb(244, 94, 94);
+}
+/* styling details */
+
+section .events ul li .details{
+    padding: 20px;
+    background: #fff;
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+    float: left;
+    overflow:scroll;
+}
+
+section .events ul li .details p{
+    position: relative;
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 16px;
+}
